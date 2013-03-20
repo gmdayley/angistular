@@ -1,0 +1,42 @@
+{
+    "url": "https://api.github.com/gists/5202421",
+    "forks_url": "https://api.github.com/gists/5202421/forks",
+    "commits_url": "https://api.github.com/gists/5202421/commits",
+    "id": "5202421",
+    "git_pull_url": "https://gist.github.com/5202421.git",
+    "git_push_url": "https://gist.github.com/5202421.git",
+    "html_url": "https://gist.github.com/5202421",
+    "files": {
+        "file1.txt": {
+            "filename": "file1.txt",
+            "type": "text/plain",
+            "language": null,
+            "raw_url": "https://gist.github.com/raw/5202421/8868536feee91265a5d059684c93d7a51f3cb578/file1.txt",
+            "size": 19
+        }
+    },
+    "public": true,
+    "created_at": "2013-03-20T05:02:58Z",
+    "updated_at": "2013-03-20T05:02:58Z",
+    "description": "jeepers a test gist",
+    "comments": 0,
+    "user": {
+        "login": "gmdayley",
+        "id": 647130,
+        "avatar_url": "https://secure.gravatar.com/avatar/fe301ef1854398b73bb209c4308e0dd2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "gravatar_id": "fe301ef1854398b73bb209c4308e0dd2",
+        "url": "https://api.github.com/users/gmdayley",
+        "html_url": "https://github.com/gmdayley",
+        "followers_url": "https://api.github.com/users/gmdayley/followers",
+        "following_url": "https://api.github.com/users/gmdayley/following",
+        "gists_url": "https://api.github.com/users/gmdayley/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gmdayley/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gmdayley/subscriptions",
+        "organizations_url": "https://api.github.com/users/gmdayley/orgs",
+        "repos_url": "https://api.github.com/users/gmdayley/repos",
+        "events_url": "https://api.github.com/users/gmdayley/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gmdayley/received_events",
+        "type": "User"
+    },
+    "comments_url": "https://api.github.com/gists/5202421/comments"
+}
