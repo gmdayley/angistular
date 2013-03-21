@@ -18,7 +18,10 @@ angular.module('app').controller('GistController', function ($scope, $http, $log
 
     var Gist = $resource('https://api.github.com/gists/:id/:option', {id: '@id', access_token: accessToken}, {
         public: {method: 'GET', params: {id: 'public'}, isArray: true},
-        starred: {method: 'GET', params: {id: 'starred'}, isArray: true}
+        starred: {method: 'GET', params: {id: 'starred'}, isArray: true},
+        isStarred: {method: 'GET', params: {option: 'star'}},
+        star: {method: 'PUT', params: {id: 'abc', option: 'star'}},
+        fork: {method: 'POST', params: {option: 'forks'}}
     });
 
     // Query list of users gist
@@ -49,5 +52,19 @@ angular.module('app').controller('GistController', function ($scope, $http, $log
         gist.$remove();
         var index = $scope.gists.myGists.indexOf(gist);
         $scope.gists.myGists.splice(index, 1);
-    }
+    };
+
+    // Star a gist
+    $scope.star = function(gist) {
+        gist.$star(function(){
+            // Check 404, 204
+        });
+    };
+
+    // Fork a gist
+    $scope.fork = function(gist) {
+        var forked = new Gist(gist);
+        forked.$fork();
+        $scope.gists.myGists.push(forked);
+    };
 });
